@@ -235,6 +235,7 @@ program define ddfeff, rclass
 	  local sup "sup"
 	}
 	*/
+	qui mata mata mlib index
 	mata: _DDFmain(`"`invars'"',`"`gopvars'"',`"`bopvars'"',"`dmu2'","`tvar'", ///
 	               "`gmat'",`gpt',`rstype',"`techflag'","Dval",`"`mql'"',"`tech'", ///
 				   "`tecch'",`maxiter',`tol')
