@@ -110,6 +110,7 @@ program define ddfeff, rclass
 		    disp as error "# of input variables != # of variables specified in gx()."
 		    error 498
 		}
+		local gmat `gmat' `gx'
 	
 	}
 	else{
@@ -127,6 +128,7 @@ program define ddfeff, rclass
 		    disp as error "# of desriable output variables != # of variables specified in gy()."
 		    error 498
 		}
+		local gmat `gmat' `gy'
 	
 	}
 	else{
@@ -146,6 +148,7 @@ program define ddfeff, rclass
 		    disp as error "# of undesriable output variables != # of variables specified in gb()."
 		    error 498
 		}
+		local gmat `gmat' `gb'
 	
 	}
 	else{
