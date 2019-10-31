@@ -23,6 +23,15 @@
 {synopt:{cmdab:t:ime:(varname)}}specifies time period for contemporaneous production technology. If {opt time:(varname)} is not specified, global production technology is assumed. 
 {p_end}
 
+{synopt:{opt gx(varlist)}}specifies direction components for input adjustment. The order of variables specified in gx() should as the same in {it:{help varlist:inputvars}}. The default is gx=0.
+{p_end}
+
+{synopt:{opt gy(varlist)}}specifies direction components for desirable output adjustment. The order of variables specified in gy() should as the same in {it:{help varlist:desirable_outputvars}}. The default is gy=Y.
+{p_end}
+
+{synopt:{opt gb(varlist)}}specifies direction components for undesirable output adjustment. The order of variables specified in gb() should as the same in {it:{help varlist:undesirable_outputvars}}. The default is gb=-B. 
+{p_end}
+
 {synopt:{cmdab:seq:uential}}specifies sequential production technology.
 {p_end}
 
