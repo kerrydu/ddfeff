@@ -9,7 +9,7 @@
 
  Alternatively, download the zipfile and unzip it to your computer disk. 
 ```
-   copy https://codeload.github.com/kerrydu/sbmeff/zip/master ddfeff-master.zip
+   copy https://codeload.github.com/kerrydu/ddfeff/zip/master ddfeff-master.zip
    unzipfile ddfeff-master.zip
    net install ddfeff, from(`c(pwd)'/ddfeff-master)
 ```
