@@ -23,13 +23,13 @@
 {synopt:{cmdab:t:ime:(varname)}}specifies time period for contemporaneous production technology. If {opt time:(varname)} is not specified, global production technology is assumed. 
 {p_end}
 
-{synopt:{opt gx(varlist)}}specifies direction components for input adjustment. The order of variables specified in gx() should as the same in {it:{help varlist:inputvars}}. The default is gx=0.
+{synopt:{opt gx(varlist)}}specifies direction components for input adjustment. The default is gx=0.
 {p_end}
 
-{synopt:{opt gy(varlist)}}specifies direction components for desirable output adjustment. The order of variables specified in gy() should as the same in {it:{help varlist:desirable_outputvars}}. The default is gy=Y.
+{synopt:{opt gy(varlist)}}specifies direction components for desirable output adjustment. The default is gy=Y.
 {p_end}
 
-{synopt:{opt gb(varlist)}}specifies direction components for undesirable output adjustment. The order of variables specified in gb() should as the same in {it:{help varlist:undesirable_outputvars}}. The default is gb=-B. 
+{synopt:{opt gb(varlist)}}specifies direction components for undesirable output adjustment. The default is gb=-B. 
 {p_end}
 
 {synopt:{cmdab:seq:uential}}specifies sequential production technology.
@@ -59,8 +59,7 @@
 {title:Description}
 
 {pstd}
-{cmd:ddfeff} selects the input and output variables from the user designated data file or in the opened data set and solves directional 
-distance function models by options specified. 
+{cmd:ddfeff} selects the input and output variables from the user designated data file or in the opened data set and solves directional distance function models by options specified. 
 
 {phang}
 The ddfeff program uses the buit-in mata function linearprogram(). Stata 16 or later is required.
@@ -69,8 +68,10 @@ The ddfeff program uses the buit-in mata function linearprogram(). Stata 16 or l
 The ddfeff program requires initial data set that contains the input and output variables for observed units. 
 
 {phang}
-Variable names must be identified by inputvars for input variable, by desirable_outputvars for desirable output variable,  and by undesirable_outputvars for undesirable output variable
- to allow that {cmd:ddfeff} program can identify and handle the multiple input-output data set.
+Variable names must be identified by inputvars for input variable, by desirable_outputvars for desirable output variable,  
+and by undesirable_outputvars for undesirable output variable
+ to allow that {cmd:ddfeff} program can identify and handle the multiple input-output data set. The direction g=(gx,gy,gb) 
+ should be specfied by options. The default is g=(0,Y,-B).
 
 
 
