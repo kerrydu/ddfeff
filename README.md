@@ -3,7 +3,13 @@
  
  ## Installing within Stata
  
-  > net install ddfeff, from("https://raw.githubusercontent.com/kerrydu/ddfeff/master/")
- 
- Alternatively, download the zipfile and unzip it to your computer disk. Then,
-   > net install ddfeff, from(file_directory)
+```
+ net install sbmeff, from("https://raw.githubusercontent.com/kerrydu/ddfeff/master/")
+```
+
+ Alternatively, download the zipfile and unzip it to your computer disk. 
+```
+   copy https://codeload.github.com/kerrydu/sbmeff/zip/master ddfeff-master.zip
+   unzipfile ddfeff-master.zip
+   net install ddfeff, from(`c(pwd)'/ddfeff-master)
+```
