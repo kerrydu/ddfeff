@@ -4,7 +4,7 @@
  ## Installing within Stata
  
 ```
- net install sbmeff, from("https://raw.githubusercontent.com/kerrydu/ddfeff/master/")
+ net install ddfeff, from("https://raw.githubusercontent.com/kerrydu/ddfeff/master/")
 ```
 
  Alternatively, download the zipfile and unzip it to your computer disk. 
