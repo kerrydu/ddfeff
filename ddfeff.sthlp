@@ -70,8 +70,8 @@ The ddfeff program requires initial data set that contains the input and output 
 {phang}
 Variable names must be identified by inputvars for input variable, by desirable_outputvars for desirable output variable,  
 and by undesirable_outputvars for undesirable output variable
- to allow that {cmd:ddfeff} program can identify and handle the multiple input-output data set. The direction g=(gx,gy,gb) 
- should be specfied by options. The default is g=(0,Y,-B).
+ to allow that {cmd:ddfeff} program can identify and handle the multiple input-output data set. The direction vector
+  g=(gx,gy,gb) should be specfied by options. The default is g=(0,Y,-B).
 
 
 
