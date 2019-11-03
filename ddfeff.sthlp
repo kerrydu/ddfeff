@@ -62,9 +62,6 @@
 {cmd:ddfeff} selects the input and output variables from the user designated data file or in the opened data set and solves directional distance function models by options specified. 
 
 {phang}
-The ddfeff program uses the buit-in mata function linearprogram(). Stata 16 or later is required.
-
-{phang}
 The ddfeff program requires initial data set that contains the input and output variables for observed units. 
 
 {phang}
@@ -72,6 +69,9 @@ Variable names must be identified by inputvars for input variable, by desirable_
 and by undesirable_outputvars for undesirable output variable
  to allow that {cmd:ddfeff} program can identify and handle the multiple input-output data set. The direction vector
   g=(gx,gy,gb) should be specfied by options. The default is g=(0,Y,-B).
+  
+{phang}
+Stata 16 or later is required.
 
 
 

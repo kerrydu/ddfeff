@@ -60,9 +60,6 @@ The default is W=(1/(3*#.inputvars),..,1/(3*#.desirable_outputvars),...,1/(3*#.u
 {cmd:nddfeff} selects the input and output variables from the user designated data file or in the opened data set and solves directional distance function models by options specified. 
 
 {phang}
-The nddfeff program uses the buit-in mata function linearprogram(). Stata 16 or later is required.
-
-{phang}
 The nddfeff program requires initial data set that contains the input and output variables for observed units. 
 
 {phang}
@@ -70,6 +67,9 @@ Variable names must be identified by inputvars for input variable, by desirable_
 and by undesirable_outputvars for undesirable output variable
  to allow that {cmd:nddfeff} program can identify and handle the multiple input-output data set. The direction vector
   g=(gx,gy,gb) should be specfied by options. The default is g=(-X,Y,-B).
+  
+{phang}
+The nddfeff program uses the buit-in mata function linearprogram(). Stata 16 or later is required.
 
 
 
